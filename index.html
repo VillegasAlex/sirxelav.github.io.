@@ -68,13 +68,30 @@
 					</li>
                 </ul>
 
-				<!-- Search -->
-				<form class="navbar-form navbar-right" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control">
-					</div>
-					<button type="select" class="btn btn-default">Contact</button>
-				</form>
+				<!-- Attempt Contact form -->
+				<div class="container">
+				<form action="action_page.php">
+
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+				</select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
             </div>
             <!-- /.navbar-collapse -->
@@ -165,7 +182,7 @@
                     <img class="img-responsive img-rounded" src="images/duckwar.jpg" alt="Duck in the Army">
                 </a>
                 <h3>
-                    <a href="#"> CRAFTWORK</a>
+                    <a href="#">CRAFTWORK</a>
                 </h3>
                 <p> Become a member today! </p>
             </article>
